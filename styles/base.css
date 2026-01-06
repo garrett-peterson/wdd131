@@ -15,8 +15,13 @@ body {
 
 main h1{
     padding: 2rem;
-    display: block;
     text-align: center;
+}
+
+header main{
+    padding: 2rem;
+    display: block;
+
 }
 
 section h2 {
