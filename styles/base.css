@@ -18,10 +18,12 @@ main h1{
     text-align: center;
 }
 
-header main{
-    padding: 2rem;
+header{
     display: block;
+}
 
+main {
+    display: block;
 }
 
 section h2 {
