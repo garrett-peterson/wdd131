@@ -64,15 +64,20 @@ img {
     padding: .75rem;
 }
 
+h3 {
+    justify-self: center;
+    text-decoration: underline;
+}
+
 /* Classes */
 
 .section-cards {
     display: grid;
-    grid-template-columns: 75% auto;
+    grid-template-columns: 65% auto;
 }
 
 .profile {
-    height: 10rem;
+    height: 12rem;
     width: auto;
 }
 
@@ -81,6 +86,13 @@ img {
     width: auto;
 }
 
+.about_me {
+    display: flex;
+}
+
+.city {
+    display: flex;
+}
 .title {
     padding: 2rem;
     display: block;
