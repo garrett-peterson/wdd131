@@ -37,7 +37,12 @@ footer {
 }
 
 li a {
-    color: var(--accent-color);
+    color: black
+}
+
+li a:hover {
+	text-decoration: underline;
+    color: var(--accent-color)
 }
 
 nav a {
