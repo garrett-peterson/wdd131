@@ -18,6 +18,7 @@
     .nav {
         padding: .75rem;
         margin: .75rem;
+        display: flex;
     }
 
     .pics {
@@ -25,14 +26,9 @@
         grid-template-columns: 1fr 1fr;
     }
 
-   ul {
-     text-align: right;
-   }
-
     #menu {
 		display: none;
     }
-
 
     .linkNav li {
 	    display: inline-block;
@@ -59,6 +55,7 @@
     .nav {
         padding: .75rem;
         margin: .75rem;
+        display: flex;
     }
 
     .pics {
@@ -67,16 +64,8 @@
     }
 
 
-    ul {
-        text-align: right;
-    }
-
     #menu {
 		display: none;
     }
 
-
-    .linkNav li {
-	    display: inline-block;
-    }
 }
