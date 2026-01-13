@@ -26,7 +26,7 @@
     }
 
    ul {
-    display: flex;
+     text-align: right;
    }
 
     #menu {
@@ -35,7 +35,7 @@
 
 
     .linkNav li {
-	    display: block;
+	    display: inline-block;
     }
 }
 
@@ -66,9 +66,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-   ul {
-    display: flex;
-   }
+
+    ul {
+        text-align: right;
+    }
 
     #menu {
 		display: none;
@@ -76,6 +77,6 @@
 
 
     .linkNav li {
-	    display: block;
+	    display: inline-block;
     }
 }
