@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Garrett Peterson">
+    <meta name="description"
+        content="">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src='scripts/place.js' defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Melissa Texas</h1>
+    </header>
+    <main>
+       <div class="hero">
+            <picture>
+                <source srcset="images/melissa.webp" media="(min-width: 750px)">
+                <img src="images/melissa-small.webp" alt="Melissa Texas" width="500" height="250">
+            </picture>
+        
+            <div class="data">
+            <h2>Data</h2>
+                <dl>
+                    <dt>Population: </dt>
+                    <dd>26,000</dd>
+
+                    <dt>County: </dt>
+                    <dd>Collin County</dd>
+
+                    <dt>Median Age: </dt>
+                    <dd>36.5</dd>
+
+                    <dt>Area: </dt>
+                    <dd>11-21 sq miles</dd>
+
+                    <dt>Homeownership Rate: </dt>
+                    <dd>88%</dd>
+
+                    <dt>Average Income: </dt>
+                    <dd>$137,875</dd>
+
+                    <dt>Poverty Rate: </dt>
+                    <dd>2.6%</dd>
+
+                    <dt>Citizenship: </dt>
+                    <dd>96.6% U.S. citizens</dd>
+                </dl>
+            </div>
+
+            <div class="weather">
+                <h2 class="cloud">Weather</h2>
+
+    
+                <img src="images/weather.svg" alt="Weather Icon" class="sun">
+        
+
+                <dl>
+                    <dt>Temperature: </dt>
+                    <dd id="temp">Temp</dd>
+
+                    <dt>Conditions: </dt>
+                    <dd id="cond">Condition</dd>
+
+                    <dt>Wind: </dt>
+                    <dd id="wind">Wind</dd>
+
+                    <dt>Wind Chill:</dt>
+                    <dd id="chill">Wind Chill</dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🥞 Garrett Peterson 🥞 Melissa Texas</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
