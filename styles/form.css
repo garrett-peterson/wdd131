@@ -7,15 +7,16 @@
 footer p {
     margin: 0.5rem 0;
 }
-
 footer {
     padding: 2rem;
     display: flex; 
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
-    background-color: var(--primary-color);
-    color: black;
+    background-color: #132a9c;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .form fieldset {
@@ -85,12 +86,7 @@ h1 {
     margin: 0 auto;
 }
 
-footer {
-    background-color: #132a9c;
-    color: white;
-    width: 50%;
-    margin: 0 auto;
-}
+
 
 textarea {
     display: block;
@@ -110,10 +106,6 @@ textarea {
     padding: 15px;
     width: 50%;
     margin:  0 auto;   
-}
-.radio-group {
-    display: flex;
-    gap: 20px;
 }
 
 .radio-item {
@@ -141,4 +133,17 @@ textarea {
 .counter p {
     font-size: 1.5rem;
     padding-top: 50px;
+}
+
+.optional {
+    color:blue; 
+    font-size: 0.8rem;
+}
+
+
+@media screen and (min-width: 610px) {
+    .radio-group {
+    display: flex;
+    gap: 20px;
+}
 }
