@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <meta name="author" content="Garrett Peterson">
+    <meta name="description"
+        content="Create a form which uses best practices to format and display it while requiring some fields and having a button ">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <h1>Product Review</h1>
+    <form method="get" action="review.html" class="form">
+        <fieldset>
+            <label>Product Name
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </label>
+        </fieldset>
+        
+        <fieldset class="stars">
+            <legend>Overall Rating</legend>
+            <div class="radio-group">
+                <div class="radio-item">
+                    <label>☆<input type="radio" id="rating-1" name="rating" value="one" required></label>
+                </div>
+                <div class="radio-item">
+                    <label>☆☆<input type="radio" id="rating-2" name="rating" value="two"></label>
+                </div>
+                <div class="radio-item">
+                    <label>☆☆☆<input type="radio" id="rating-3" name="rating" value="three"></label>
+                </div>
+                <div class="radio-item">
+                    <label>☆☆☆☆<input type="radio" id="rating-4" name="rating" value="four"></label>
+                </div>
+                <div class="radio-item">
+                    <label>☆☆☆☆☆<input type="radio" id="rating-5" name="rating" value="five"></label>
+                </div>
+            </div>
+            
+        </fieldset>
+        
+        <fieldset>
+            <label>Date of Installation<input type="date" id="date" name="dateInstalled" required></label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Which features did you find useful in the product?<br><i>(Check all that apply)</i></legend>
+                <label><input type="checkbox" name="durability" id="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="ease" id="ease" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="yes"> Design</label>
+        </fieldset>
+
+        <fieldset>
+            <label>Written Review <span style="color:blue; font-size: 0.8rem;">(Optional)</span><textarea name="review" id="review"></textarea></label>
+            <label>Your Name <span style="color:blue; font-size: 0.8rem;">(Optional)</span><input type="text" name="name" id="name"></label>
+        </fieldset>
+
+        <input type="submit" value="Post Review">
+
+    </form>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🥞 Garrett Peterson 🥞 Melissa Texas</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
