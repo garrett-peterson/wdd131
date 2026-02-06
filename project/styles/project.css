@@ -123,13 +123,6 @@ nav a:hover {
 	content: "X";
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    object-fit: cover;
-}
-
 .hero picture,
 .hero img {
   width: 100%;
@@ -196,13 +189,14 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.layout a button{
+.layout a{
+    text-align: center;
     border: none;
     background-image: linear-gradient(#7b9b8a, #37463e);
     color: #fff;
     border-radius: 6px;
     padding: 6px;
-    width: 400px;
+    width: 300px;
     box-shadow: 1px 1px 4px #999;
 }
 
