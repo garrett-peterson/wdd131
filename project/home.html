@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <meta name="author" content="Garrett Peterson">
+    <meta name="description"
+        content="Homepage for my author website.  It has the navigation to the other pages and some basic info">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Garrett Peterson - Fantasy Author</h1>
+        <div class="menu">
+            <span id="album-title" class="title">Homepage</span>
+            <a id="menu" href="#"></a>
+            <nav class="navigation">
+                <ul class="linkNav">
+                    <li><a href="home.html" id="home">Home</a></li>
+                    <li><a href="about-me.html" id="about">About Me</a></li>
+                    <li><a href="samples.html" id="sample">Samples</a></li>
+                    <li><a href="contact-me.html" id="contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/background-large.jpg" media="(min-width: 600px)">
+                <img src="images/background-small.jpg" alt="Foggy trees">
+            </picture>
+
+            <div class="purpose">
+                <h2>My Purpose in Writing</h2>
+                <p>My purpose in writing is to share uplifting, imaginative stories that inspire and bring joy. Influenced by my favorite authors and shaped by my lifelong Christian faith, I strive to create high-quality, clean fantasy that is both fun and exciting to read. Through rich worlds, meaningful characters, and themes of hope, courage, and struggle, my goal is to offer readers stories that inspire as much as they entertain.</p>
+            </div>
+        </div>
+        
+        <div class="info">
+            <div class="genres">
+                <h2>My Writing Genres</h2>
+                <ul>
+                    <li>Fantasy</li>
+                    <li>Urban Fantasy</li>
+                    <li>Epic Fantasy</li>
+                    <li>Thriller</li>
+                    <li>Mystery</li>
+                </ul>
+            </div>
+
+            <div class="sample">
+                <h2>The Dying Sun</h2>
+                <p>The air burned with sand and incense.  Dhara shoved through the crowd, ignoring the shouts and curses that followed her.  Vantera’s streets were always crowded, but today they felt like a wall closing in around her.  The scent  of spice and sweat hung thick in the air.  Dhara ducked to the side nimbly avoiding the half hearted attempt of someone to grab her.  She was probably already too late, she had been across the city when the information reached her.</p>
+                <a href="samples.html" id="more">Read More...</a>
+            </div>
+
+            <div class="learn">
+                <div class="layout">
+                    <h2>Learn More About My Current Projects</h2>
+                    <ul>
+                        <li>The Dying Sun</li>
+                        <li>Legend of the Falling Knights</li>
+                        <li>The Tale of Two Swords</li>
+                        <li>War For Christmas Book 1</li>
+                        <li>Adventures of the Sea Pigeon Book 1</li>
+                    </ul>
+                    <img src="images/books.jpg" alt="Stack of books" width="180">
+                    <a href="samples.html"><button type="button">Read Now</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>📖 Garrett Peterson 📖 Melissa Texas</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

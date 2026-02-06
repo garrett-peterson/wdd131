@@ -1,0 +1,310 @@
+:root {
+    --background-color: #ededed;
+    --text-color: #232323;
+    --accent-color: #3f5f4f;
+    --highlight-color:#7b9b8a;
+    --heading-text-color:#f1efe9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}   
+
+h1 {
+    background-color: var(--accent-color);
+    color: var(--heading-text-color);
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li a {
+    color: var(--text-color)
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: var(--text-color)
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-color)
+}
+
+.title {
+    padding: 2rem;
+    font-size: larger;
+}
+.menu {
+    display: block;
+	font-size: 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--heading-text-color);
+}
+.navigation a {
+    padding: 0 1.5rem;
+}
+.navigation {
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+.nav {
+    padding: .75rem;
+    margin: .75rem;
+}
+#menu::before {
+    color: var(--heading-text-color);
+	content: "≡";
+    font-size:xxx-large;
+}
+#menu {
+    text-decoration: none;
+}
+.linkNav {
+    list-style: none;
+    margin: 0 auto;
+	max-width: 760px;
+}
+
+.linkNav li {
+	display: none;
+}
+
+.linkNav a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--heading-text-color);
+	transition: 0.5s;
+}
+
+.linkNav a:hover,
+.linkNav a:active {
+	color: var(--text-color);
+	background-color: var(--highlight-color);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.hero picture,
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.sample p, .purpose p {
+    text-indent: 50px;
+}
+
+.genres ul {
+    padding: 15px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn ul {
+    padding: 15px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info  {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.genres, .sample, .learn, .purpose{
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.purpose {
+    margin: 1rem 1rem -1rem;
+}
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.layout img {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.layout h2 {
+    margin: 0 auto;
+}
+
+.layout p {
+    margin: 0 auto;
+}
+
+.layout a {
+    margin: 0 auto;
+}
+
+.layout a button{
+    border: none;
+    background-image: linear-gradient(#7b9b8a, #37463e);
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px;
+    width: 400px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+footer {
+    padding: 2rem;
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--heading-text-color);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 600px){
+
+    .hero {
+        position: relative; 
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: var(--accent-color);
+        color: var(--heading-text-color);
+    }
+    .navigation a {
+        padding: 0 1.5rem;
+    }
+    .navigation {
+        padding: 1rem;
+        justify-content: space-evenly;
+    }
+   #menu {
+		display: none;
+    }
+    .linkNav li {
+        display: block;
+    }
+
+    .linkNav {
+        display: flex;        
+        gap: 1rem;           
+        align-items: center;
+    }
+
+    .purpose {
+        padding: .5rem;
+        position:absolute;
+        bottom:20px;
+        left:100px;
+        right:100px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        color: var(--text-color);
+        margin: 1rem;
+    }
+
+    .info  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .learn {
+        grid-column: 1 / -1;
+    }
+
+    .genres, .sample, .learn {
+        background: white;
+        border-radius: 12px;
+        padding: 1rem;
+        color: var(--text-color);
+    }
+
+    .layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .layout img {
+        padding: 0px;
+        grid-column: 2 / 3;
+    }
+
+    .layout h2 {
+        grid-column: 1 / 2;
+    }
+
+    .layout ul {
+        grid-column: 1/2;
+    }
+
+    .layout a {
+        grid-column: 1/2;
+    }
+
+}
