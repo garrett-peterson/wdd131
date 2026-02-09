@@ -4,6 +4,8 @@ const hambutton = document.querySelector('#menu');
 function toggleMenu() {
     navList.classList.toggle('show');
     hambutton.classList.toggle('show');
+	const expanded = hambutton.classList.contains('show');
+  	hambutton.setAttribute('aria-expanded', expanded);
 }
 
 hambutton.addEventListener('click', toggleMenu);
