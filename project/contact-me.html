@@ -6,7 +6,7 @@
     <title>Contact Me</title>
     <meta name="author" content="Garrett Peterson">
     <meta name="description"
-        content="Homepage for my author website.  It has the navigation to the other pages and some basic info">
+        content="Contact me page with a from to send me(not really) an email.  It has five fields to fill out and directs you to another page when you complete it">
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/project.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
@@ -18,7 +18,8 @@
 
 </head>
 <body>
-    <header>
+    <header> 
+        <h1>Garrett Peterson - Fantasy Author</h1>
         <div class="menu">
             <span id="album-title" class="title">Contact Me</span>
             <a id="menu" href="#"></a>
@@ -33,9 +34,29 @@
         </div>
     </header>
 
+    <main>
+        <h2>Send Me an Email</h2>
+        <form method="get" action="thanks.html" class="form">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label>First Name: <input type="text" name="fname" required></label>
+                <label>Last Name: <input type="text" name="lname" required></label>
+                <label>Email: <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <label>How did you find my work: <input type="text" name="referral"></label>
+                <label>Your message: <textarea name="message" id="message" required></textarea></label>
+            </fieldset>
+
+             <input type="submit" value="Send Email">
+        </form>
+    </main>
+
 
     <footer>
-        <p>&copy; <span id="currentyear"></span>📖 Garrett Peterson 📖 Melissa Texas</p>
+        <p>&copy; <span id="currentyear"></span>📖 Garrett Peterson 📖 garrett.peterson726@gmail.com</p>
         <p id="lastModified"></p>
     </footer>
 </body>
