@@ -140,6 +140,10 @@ footer p {
     margin: 0.5rem 0;
 }
 
+footer a {
+    color: white;
+}
+
 /*-----Homepage-----*/
 .hero picture,
 .hero img {
