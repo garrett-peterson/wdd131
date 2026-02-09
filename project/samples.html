@@ -34,22 +34,27 @@
         </div>
     </header>
 
-    <main>
-        <h2>Samples</h2>
-        <select id="genreFilter">
-            <option value="all">All</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="urban fantasy">Urban Fantasy</option>
-            <option value="epic fantasy">Epic Fantasy</option>
-            <option value="thriller">Thriller</option>
-            <option value="mystery">Mystery</option>
-            <option value="favorites">Favorites</option>
-        </select>
+    <main class="sample-main">
+        <h2 class="sample-header">Writing Samples</h2>
 
-        <label for="searchInput">Search by Title:</label>
-        <input type="search" id="searchInput">
+        <div class="search">
+            <label>Search by Genre: 
+                <select id="genreFilter">
+                    <option value="all">All</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="urban fantasy">Urban Fantasy</option>
+                    <option value="epic fantasy">Epic Fantasy</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="favorites">Favorites</option>
+                </select>
+            </label>
+            
+            <label for="searchInput">Search by Title: <input type="search" id="searchInput"></label>
+            
+        </div>
 
-        <div id="samplesList">
+        <div id="samplesList" class="samplesList">
 
         </div>
 

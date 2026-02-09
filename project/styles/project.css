@@ -11,7 +11,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+ /*-----Universal-----*/
 body {
     font-family: 'Lora', serif;
     color: var(--text-color);
@@ -123,6 +123,21 @@ nav a:hover {
 	content: "X";
 }
 
+footer {
+    padding: 2rem;
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--heading-text-color);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/*-----Homepage-----*/
 .hero picture,
 .hero img {
   width: 100%;
@@ -167,7 +182,6 @@ nav a:hover {
     margin: 1rem 1rem -1rem;
 }
 
-
 .layout {
     display: grid;
     grid-template-columns: 1fr;
@@ -200,22 +214,82 @@ nav a:hover {
     box-shadow: 1px 1px 4px #999;
 }
 
-footer {
-    padding: 2rem;
-    display: flex; 
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-    background-color: var(--accent-color);
-    color: var(--heading-text-color);
+
+/*-----Sample Page-----*/
+.star {
+    font-size: x-large;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: darkgoldenrod;
+    background-color: white;
 }
 
-footer p {
-    margin: 0.5rem 0;
+.more {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    color: var(--text-color);
+}
+
+.samplesList {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.sample-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.sample-card h3, .genre {
+    text-align: center;
+}
+
+.sample-header {
+    padding:1rem;
+    color: var(--text-color);
+}
+
+.search {
+    padding: 1rem;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+select, input {
+    height: 30px;
+    width: 150px;
+}
+
+.more:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.text{
+    white-space: pre-wrap;
+    line-height: 1.6;
+    max-width: 65ch;        
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 600px){
 
+    /*----Homepage----*/
     .hero {
         position: relative; 
     }
@@ -301,4 +375,13 @@ footer p {
         grid-column: 1/2;
     }
 
+    /*-----Samples-----*/
+
+    .samplesList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .show {
+        grid-column: 1/4;
+    }
 }
