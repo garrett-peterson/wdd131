@@ -131,7 +131,7 @@ footer {
     display: flex; 
     flex-direction: column;
     gap: 0.5rem;
-    align-items: center;
+    align-items: center; 
     background-color: var(--accent-color);
     color: var(--heading-text-color);
 }

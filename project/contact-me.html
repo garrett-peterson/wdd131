@@ -6,7 +6,7 @@
     <title>Contact Me</title>
     <meta name="author" content="Garrett Peterson">
     <meta name="description"
-        content="Contact me page with a from to send me(not really) an email.  It has five fields to fill out and directs you to another page when you complete it">
+        content="Contact me page with a form to send me (not really) an email.  It has five fields to fill out and directs you to another page when you complete it">
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/project.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
@@ -21,7 +21,7 @@
     <header> 
         <h1>Garrett Peterson - Fantasy Author</h1>
         <div class="menu">
-            <span id="album-title" class="title">Contact Me</span>
+            <span id="contact-title" class="title">Contact Me</span>
             <button id="menu" aria-label="Open menu" aria-expanded="false"></button>
             <nav class="navigation">
                 <ul class="linkNav">
@@ -47,7 +47,7 @@
             <fieldset>
                 <legend>Message</legend>
                 <label>How did you find my work: <input type="text" name="referral"></label>
-                <label>Your message: <textarea name="message" id="message" required></textarea></label>
+                <label>Your message: <textarea name="message" id="message" placeholder="Write your message here..."></textarea></label>
             </fieldset>
 
              <input type="submit" value="Send Email">
