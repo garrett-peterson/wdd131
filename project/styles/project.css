@@ -86,9 +86,12 @@ nav a:hover {
     color: var(--heading-text-color);
 	content: "≡";
     font-size:xxx-large;
+    background-color: var(--accent-color);
 }
 #menu {
     text-decoration: none;
+    outline: none;
+    border: none;
 }
 .linkNav {
     list-style: none;
@@ -365,6 +368,53 @@ textarea {
     text-align: center;
 }
 
+/*-----About Me-----*/
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.intro, .promise, .mission, .details, .action{
+    background-color: white;
+    border-radius: 12px;
+    padding:1rem;
+    color: var(--text-color);
+    max-width: 60ch;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.profile {
+    margin: 0 auto;
+}
+
+.oath {
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    padding:1.5rem;
+    max-width: 300px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.profile img {
+        border-radius: 12px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul {
+    padding: 15px;
+}
+
 @media screen and (min-width: 600px){
 
     /*----Homepage----*/
@@ -462,4 +512,31 @@ textarea {
     .show {
         grid-column: 1/4;
     }
+
+    /*-----About Me-----*/
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+        align-items: start;
+    }
+
+    .profile{
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .intro {
+        grid-column: 2/3;
+    }
+
+    .about-text {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
 }
